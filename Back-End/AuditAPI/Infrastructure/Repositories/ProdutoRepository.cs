@@ -16,39 +16,67 @@ namespace AuditAPI.Infrastructure.Repositories{
             return new MySqlConnection(_connectionString);
         }
 
-        public void Adicionar(Produto produto)
+        public async Task Adicionar(Produto produto)
         {
-            using var connection = GetConnection();
-            connection.Open();
-            connection.Execute("INSERT INTO Produto (Nome, Preco, QuantidadeEstoque) VALUES (@Nome, @Preco, @QuantidadeEstoque)", produto);
+            try{
+                using var connection = GetConnection();
+                await connection.OpenAsync();
+                await connection.ExecuteAsync("INSERT INTO Produto (Nome, Preco, QuantidadeEstoque) VALUES (@Nome, @Preco, @QuantidadeEstoque)", produto);
+
+            }catch(Exception ex){
+                throw new ApplicationException("Erro ao adicionar o produto", ex);
+            }
+            
         }
 
-        public void Atualizar(Produto produto)
+        public async Task Atualizar(Produto produto)
         {
-            using var connection = GetConnection();
-            connection.Open();
-            connection.Execute("UPDATE Produto SET Nome = @Nome, Preco = @Preco, QuantidadeEstoque = @QuantidadeEstoque WHERE Id = @Id", produto);
+            try{
+                using var connection = GetConnection();
+                await connection.OpenAsync();
+                await connection.ExecuteAsync("UPDATE Produto SET Nome = @Nome, Preco = @Preco, QuantidadeEstoque = @QuantidadeEstoque WHERE Id = @Id", produto);
+
+            }catch(Exception ex){
+                throw new ApplicationException("Erro ao atualizar o produto", ex);
+            }
         }
 
-        public Produto ObterPorId(int id)
+        public async Task<Produto> ObterPorId(int id)
         {
-            using var connection = GetConnection();
-            connection.Open();
-            return connection.QueryFirstOrDefault<Produto>("SELECT * FROM Produto WHERE Id = @Id", new {Id = id}) ?? new Produto();
+            try{
+                using var connection = GetConnection();
+                await connection.OpenAsync();
+                return await connection.QueryFirstOrDefaultAsync<Produto>("SELECT * FROM Produto WHERE Id = @Id", new {Id = id}) ?? new Produto();
+
+            }catch(Exception ex){
+                throw new ApplicationException("Erro ao carregar produto", ex);
+            }
+            
         }
 
-        public IEnumerable<Produto> ObterTodos()
+        public async Task<IEnumerable<Produto>> ObterTodos()
         {
-            using var connection = GetConnection();
-            connection.Open();
-            return connection.Query<Produto>("SELECT * FROM Produto");
+            try{
+                using var connection = GetConnection();
+                await connection.OpenAsync();
+                return await connection.QueryAsync<Produto>("SELECT * FROM Produto");
+
+            }catch(Exception ex){
+                throw new ApplicationException("Erro ao listar produto", ex);
+            }
         }
 
-        public void Remover(int id)
+        public async Task Remover(int id)
         {
-            using var connection = GetConnection();
-            connection.Open();
-            connection.Execute("DELETE FROM Produto WHERE Id = @Id", new {Id = id});
+            try{
+                using var connection = GetConnection();
+                await connection.OpenAsync();
+                await connection.ExecuteAsync("DELETE FROM Produto WHERE Id = @Id", new {Id = id});
+
+            }catch(Exception ex){
+                throw new ApplicationException("Erro ao deletar produto", ex);
+            }
+            
         }
     }
 }

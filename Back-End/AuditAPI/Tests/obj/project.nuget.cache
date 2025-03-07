@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KKNGPNub9nyykMqRCRm5vt6Oj/7mFKMEx9G1ANNjPKdhc/FwwN7XVrUUsbh31hqhPE3ckL5kf47qANGgYVOljw==",
+  "dgSpecHash": "4ZTaJCAPitthZFV8wyRxGzFQf0N3LpmBbHDqDWxKCn0Y9YRzS3Au4dtLBOKAXcq48NSWGFY7ENWukxUv8jMgKw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Tests\\Tests.csproj",
+  "projectFilePath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Tests\\Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wesley.moura\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\wesley.moura\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",

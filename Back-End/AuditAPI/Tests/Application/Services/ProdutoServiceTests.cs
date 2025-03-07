@@ -3,6 +3,7 @@ using AuditAPI.Application.Services;
 using AuditAPI.Domain.Entities;
 using AuditAPI.Domain.Interfaces;
 using Xunit;
+using System.Net.Cache;
 
 namespace AuditAPI.Tests{
 

@@ -1,6 +1,7 @@
 using AuditAPI.Application.Services;
 using AuditAPI.Domain.Interfaces;
 using AuditAPI.Infrastructure.Repositories;
+using AuditAPI.Infrastructure.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +14,7 @@ builder.Services.AddScoped<IProdutoRepository>(provider =>
 );
 
 builder.Services.AddScoped<ProdutoService, ProdutoService>();
+builder.Services.AddScoped<IFileService, FileService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

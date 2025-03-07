@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Tests\\Tests.csproj": {}
+    "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Tests\\Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\API\\API.csproj": {
+    "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\API\\API.csproj",
+        "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\API\\API.csproj",
         "packagesPath": "C:\\Users\\wesley.moura\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\API\\obj\\",
+        "outputPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\wesley.moura\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Application\\Application.csproj"
+              "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Application\\Application.csproj"
               },
-              "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -79,14 +79,14 @@
         }
       }
     },
-    "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Application\\Application.csproj": {
+    "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\wesley.moura\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Application\\obj\\",
+        "outputPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\wesley.moura\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -103,8 +103,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Domain\\Domain.csproj"
+              "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Domain\\Domain.csproj"
               }
             }
           }
@@ -138,14 +138,14 @@
         }
       }
     },
-    "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Domain\\Domain.csproj": {
+    "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\wesley.moura\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\wesley.moura\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -193,14 +193,14 @@
         }
       }
     },
-    "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\wesley.moura\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\wesley.moura\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -217,11 +217,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Application\\Application.csproj"
+              "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Application\\Application.csproj"
               },
-              "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Domain\\Domain.csproj"
+              "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Domain\\Domain.csproj"
               }
             }
           }
@@ -265,14 +265,14 @@
         }
       }
     },
-    "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Tests\\Tests.csproj": {
+    "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Tests\\Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Tests\\Tests.csproj",
+        "projectUniqueName": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Tests\\Tests.csproj",
         "projectName": "Tests",
-        "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Tests\\Tests.csproj",
+        "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Tests\\Tests.csproj",
         "packagesPath": "C:\\Users\\wesley.moura\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Tests\\obj\\",
+        "outputPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\wesley.moura\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -289,17 +289,17 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\API\\API.csproj": {
-                "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\API\\API.csproj"
+              "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\API\\API.csproj": {
+                "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\API\\API.csproj"
               },
-              "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Application\\Application.csproj"
+              "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Application\\Application.csproj"
               },
-              "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Domain\\Domain.csproj"
+              "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-end\\AuditAPI\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\wesley.moura\\Desktop\\Estudo\\Back-End\\AuditAPI\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
