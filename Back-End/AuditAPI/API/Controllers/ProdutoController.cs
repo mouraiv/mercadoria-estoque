@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 using AuditAPI.API.DTOs;
 using AuditAPI.Application.Services;
 using AuditAPI.Domain.Entities;
+using AuditAPI.Domain.Exceptions;
+using AuditAPI.Infrastructure.Exceptions;
 
 namespace AuditAPI.API.Controllers{
 
@@ -18,19 +20,23 @@ namespace AuditAPI.API.Controllers{
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProdutoResponseDTO>>> ObterTodos(){
             try{
-                var produtos = await _produtoService.ObterTodos();
+                var produtos = await _produtoService.ObterTodos();                
 
-                var response = produtos.Select(produto => new ProdutoResponseDTO{
+                var response = produtos.Select(produto => produto != null ? new ProdutoResponseDTO{
                     Id = produto.Id,
                     Nome = produto.Nome,
                     Preco = produto.Preco,
                     QuantidadeEstoque = produto.QuantidadeEstoque,
                     Imagem = produto.Imagem
-                });
+                } : null).Where(dto => dto != null);
+
                 return Ok(response);
 
-            }catch(Exception ex){
-                return BadRequest("Erro ao listar produtos :" + ex.Message);
+            }catch(DomainException ex){
+                return BadRequest(ex.Message);
+
+            }catch(RepositoryException ex){
+                return StatusCode(500, ex.Message);
             }
         }
 
@@ -38,20 +44,21 @@ namespace AuditAPI.API.Controllers{
         public async Task<ActionResult<ProdutoResponseDTO>> ObterPorId(int id){
             try{
                 var produto = await _produtoService.ObterPorId(id);
-                if(produto == null){
-                    return NotFound();
-                }
-                var response = new ProdutoResponseDTO{
+                
+                var response = produto != null ? new ProdutoResponseDTO{
                     Id = produto.Id,
                     Nome = produto.Nome,
                     Preco = produto.Preco,
                     QuantidadeEstoque = produto.QuantidadeEstoque,
                     Imagem = produto.Imagem
-                };
+                } : null;
                 return Ok(response);
 
-            }catch(Exception ex){
-                return BadRequest("Erro ao carregar produtos :" + ex.Message);
+            }catch(DomainException ex){
+                return BadRequest(ex.Message);
+
+            }catch(RepositoryException ex){
+                return StatusCode(500, ex.Message);
             }
         }
 
@@ -71,13 +78,15 @@ namespace AuditAPI.API.Controllers{
 
                 }
             }
-            catch (ArgumentException ex)
-            {
+            catch(DomainException ex){
                 return BadRequest(ex.Message);
             }
             catch (FileNotFoundException ex)
             {
                 return NotFound(ex.Message);
+            }
+            catch(RepositoryException ex){
+                return StatusCode(500, ex.Message);
             }
 
         }
@@ -96,8 +105,11 @@ namespace AuditAPI.API.Controllers{
                 await _produtoService.Atualizar(produto);
                 return NoContent();
 
-            }catch(Exception ex){
-                return BadRequest("Erro ao atualizar produtos :" + ex.Message);
+            }catch(DomainException ex){
+                return BadRequest(ex.Message);
+
+            }catch(RepositoryException ex){
+                return StatusCode(500, ex.Message);
             }
         }
 
@@ -106,10 +118,12 @@ namespace AuditAPI.API.Controllers{
             try{
                 await _produtoService.Remover(id);
                 return NoContent();
-            }catch(KeyNotFoundException ex){
-                return NotFound("Erro na chave do produto: " + ex.Message);
+
             }catch(ArgumentException ex){
-                return BadRequest("Erro ao deletar produto: " + ex.Message);
+                return BadRequest($"Erro ao excluir o produto: {ex.Message}");
+
+            }catch(RepositoryException ex){
+                return StatusCode(500, ex.Message);
             }
         }
 
